@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Ali Mounim Rajabi</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Ensure full height for flex layout */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    /* Apply the background image and set up flex layout */
+    body {
+      background: url('images/hero-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+    }
+    /* Main content will take up remaining space */
+    main.container {
+      flex: 1;
+      padding: 20px;
+    }
+    /* Semi-transparent white overlay for text content */
+    .text-overlay {
+      background: rgba(255, 255, 255, 0.7); /* semi-transparent white */
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      color: #000; /* black text for contrast */
+    }
+    /* Footer styling */
+    footer {
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">Ali Mounim Rajabi</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+    </nav>
+  </header>
+
+  <!-- About Content -->
+  <main class="container">
+    <div class="text-overlay">
+      <h1>About Me</h1>
+      <section id="bio">
+        <p>[Your short biography goes here. For example: "I am a dedicated data scientist and robotics enthusiast with a passion for uncovering insights and creating innovative solutions."]</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ali Mounim Rajabi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

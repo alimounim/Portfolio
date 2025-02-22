@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Ali Mounim Rajabi</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Inline styles for background image and text overlay -->
+  <style>
+    /* Apply the background image to the body */
+    body {
+      background: url('images/hero-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    /* Overlay only for the text section */
+    .text-overlay {
+      background: rgba(255, 255, 255, 0.7); /* semi-transparent white */
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      color: #000; /* black text for contrast */
+      margin: 20px auto;
+      max-width: 600px;
+    }
+    /* Style for the contact form section */
+    #contact-form-section {
+      text-align: center;
+      padding: 20px;
+    }
+    .form-wrapper {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .form-wrapper iframe {
+      width: 100%;
+      height: 721px; /* Adjust height as needed */
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">Ali Mounim Rajabi</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Contact Content -->
+  <main class="container">
+    <!-- Wrap only the text parts in the overlay -->
+    <div class="text-overlay">
+      <h1>Contact Me</h1>
+      <section id="contact-details">
+        <ul class="contact-links">
+          <li><a href="https://www.linkedin.com/in/ali-mounim-rajabi-58a226228/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.kaggle.com/alirajabi712" target="_blank" rel="noopener noreferrer">Kaggle</a></li>
+          <li><a href="https://github.com/alimounim" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.coursera.org/user/4080da04bf4ca824aaf58e0428212dca" target="_blank" rel="noopener noreferrer">Coursera</a></li>
+        </ul>
+      </section>
+      <h2>Send a Message</h2>
+    </div>
+
+    <section id="contact-form-section">
+      <div class="form-wrapper">
+        <!-- Google Form Embed -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSendGm_8ulhnv7Lnhl2bYJexMcFvhvOW4EcattA1y26GAfplw/viewform?embedded=true" 
+                width="640" 
+                height="721" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+          Loading…
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ali Mounim Rajabi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
