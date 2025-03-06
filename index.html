@@ -8,7 +8,28 @@
   <!-- GSAP and ScrollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
-  <!-- Three.js for 3D effects removed -->
+  <style>
+    /* Profile Buttons Section using default background */
+    .profile-section {
+      padding: 10px;
+      text-align: center;
+      margin: 5px auto;
+      max-width: 800px;
+    }
+    .profile-btn {
+      background-color: transparent;
+      border: 2px solid #333;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .profile-btn:hover {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
   <!-- Header with Navigation -->
@@ -26,30 +47,41 @@
     </nav>
   </header>
 
-  <!-- Hero Section with CSS Background and Text Overlay -->
+  <!-- Hero Section -->
   <section id="home" class="hero">
-    <!-- The CSS background image is applied to the .hero container -->
-    <!-- Three.js Canvas removed -->
-    <!-- Hero Content (text) -->
     <div class="hero-content">
       <h1>Hi, I'm Ali Mounim Rajabi</h1>
       <p>A Data Analyst with a passion for Data and technology.</p>
     </div>
   </section>
 
-  <!-- Additional Section (Animated on Scroll) -->
-  <section id="intro" class="section">
-  <div class="container">
-    <h2>Welcome</h2>
-    <p>
-      Welcome to my portfolio! Here, you'll find a collection of my projects and a glimpse into my work in data analysis, technology, and robotics.
-    </p>
-    <p>
-      I strive to share my experiences and skills through each project, showcasing my approach to solving real-world challenges. Enjoy exploring my work!
-    </p>
-  </div>
 
+
+  <!-- Intro Section -->
+  <section id="intro" class="section">
+    <div class="container">
+      <h2>Welcome</h2>
+      <p>
+        Welcome to my portfolio! Here, you'll find a collection of my projects and a glimpse into my work in data analysis, technology, and robotics.
+      </p>
+      <p>
+        I strive to share my experiences and skills through each project, showcasing my approach to solving real-world challenges. Enjoy exploring my work!
+      </p>
+      <p>
+        Click on the buttons below to look into my profiles.
+      </p>
+    </div>
   </section>
+
+  <!-- Profile Buttons Section (Own Section Above Intro) -->
+  <section class="profile-section">
+    <button onclick="window.open('https://www.linkedin.com/in/ali-mounim-rajabi-58a226228/', '_blank')" class="profile-btn">LinkedIn</button>
+    <button onclick="window.open('https://www.kaggle.com/alirajabi712', '_blank')" class="profile-btn">Kaggle</button>
+    <button onclick="window.open('https://github.com/alimounim', '_blank')" class="profile-btn">GitHub</button>
+    <button onclick="window.open('https://www.coursera.org/user/4080da04bf4ca824aaf58e0428212dca', '_blank')" class="profile-btn">Coursera</button>
+    <button onclick="window.open('https://public.tableau.com/app/profile/ali.mounim.rajabi7409/vizzes', '_blank')" class="profile-btn">Tableau</button>
+  </section>
+
 
   <!-- Footer -->
   <footer>
@@ -63,6 +95,5 @@
 
   <!-- Global JavaScript -->
   <script src="js/script.js"></script>
-  <!-- Three.js Scene Initialization script removed -->
 </body>
 </html>
